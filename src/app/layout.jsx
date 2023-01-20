@@ -47,8 +47,6 @@ export default function RootLayout({ children }) {
           <a style={anchorStyle} href={'/page3'}>
             Hard link to page3
           </a>
-          <div></div>
-          <div></div>
         </nav>
         <h1>Next.js version: 13.1.4-canary.0</h1>
         {children}
