@@ -6,7 +6,10 @@ export default function RootLayout() {
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body>{children}</body>
+      <body>
+        <h1>Next.js version: 13.1.3,</h1>
+        {children}
+      </body>
     </html>
   );
 }
