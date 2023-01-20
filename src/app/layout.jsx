@@ -1,17 +1,21 @@
 import Link from 'next/link';
 
-const linkStyle = {
-  backgroundColor: '#b3fada',
-  color: '#040013',
+const anchorStyle = {
   padding: '10px',
   margin: '3px',
-};
-
-const anchorStyle = {
   backgroundColor: '#8c0033',
   color: 'white',
-  padding: '10px',
-  margin: '3px',
+};
+
+const linkStyle = {
+  ...anchorStyle,
+  backgroundColor: '#b3fada',
+  color: '#040013',
+};
+
+const navStyle = {
+  display: 'grid',
+  gridTemplateColumns: '1fr 1fr',
 };
 
 export default function RootLayout({ children }) {
@@ -23,12 +27,7 @@ export default function RootLayout({ children }) {
       */}
       <head />
       <body>
-        <nav
-          style={{
-            display: 'grid',
-            gridTemplateColumns: '1fr 1fr',
-          }}
-        >
+        <nav style={navStyle}>
           <Link style={linkStyle} href={'/'}>
             Soft link to Home
           </Link>
