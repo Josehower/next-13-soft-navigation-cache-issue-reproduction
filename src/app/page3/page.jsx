@@ -1,30 +1,17 @@
-import Link from 'next/link';
-
 export const dynamic = 'force-dynamic';
 
-export default function Home() {
+export default function Page3() {
   return (
     <main>
+      <h4>Page 3</h4>
       Random number = {Math.random() * 1000}
       <br />
       <br />
-      How can i make a page that generates a random number with a server
-      component only?
+      How can I create a page that generates a new random number every time the
+      page is loaded using a server component?
       <br />
       <br />
-      shouldn't work if using <code>dynamic = 'force-dynamic'</code>
-      <hr />
-      Soft Navigation return cached numbers:{' '}
-      <Link style={{ backgroundColor: 'beige' }} href={'/'}>
-        Go page1
-      </Link>
-      <br />
-      <br />
-      <br />
-      Hard Navigation return expected values:{' '}
-      <a style={{ backgroundColor: 'beige' }} href={'/'}>
-        Go page1
-      </a>
+      Shouldn’t it work if using <code>dynamic = 'force-dynamic'</code> ?
     </main>
   );
 }
