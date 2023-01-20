@@ -17,15 +17,15 @@ export default function Home() {
       <code>revalidate = 0</code> ?
       <hr />
       Soft Navigation return cached numbers:{' '}
-      <Link style={{ backgroundColor: 'beige' }} href={'/page2'}>
-        Go page2
+      <Link style={{ backgroundColor: 'beige' }} href={'/'}>
+        Go page1
       </Link>
       <br />
       <br />
       <br />
       Hard Navigation return expected values:{' '}
-      <a style={{ backgroundColor: 'beige' }} href={'/page2'}>
-        Go page2
+      <a style={{ backgroundColor: 'beige' }} href={'/'}>
+        Go page1
       </a>
     </main>
   );
