@@ -23,7 +23,12 @@ export default function RootLayout({ children }) {
       */}
       <head />
       <body>
-        <nav>
+        <nav
+          style={{
+            display: 'grid',
+            gridTemplateColumns: '1fr 1fr',
+          }}
+        >
           <Link style={linkStyle} href={'/'}>
             Soft link to Home
           </Link>
