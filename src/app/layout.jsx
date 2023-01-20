@@ -7,7 +7,7 @@ export default function RootLayout({ children }) {
       */}
       <head />
       <body>
-        <h1>Next.js version: 13.1.3</h1>
+        <h1>Next.js version: 13.1.4-canary.0</h1>
         {children}
       </body>
     </html>

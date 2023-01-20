@@ -1,7 +1,6 @@
 import Link from 'next/link';
 
 export const dynamic = 'force-dynamic';
-export const revalidate = 0;
 
 export default function Home() {
   return (
@@ -13,19 +12,18 @@ export default function Home() {
       component only?
       <br />
       <br />
-      shouldn't work if using <code>dynamic = 'force-dynamic'</code> and{' '}
-      <code>revalidate = 0</code> ?
+      shouldn't work if using <code>dynamic = 'force-dynamic'</code>
       <hr />
       Soft Navigation return cached numbers:{' '}
-      <Link style={{ backgroundColor: 'beige' }} href={'/page2'}>
-        Go page2
+      <Link style={{ backgroundColor: 'beige' }} href={'/'}>
+        Go page1
       </Link>
       <br />
       <br />
       <br />
       Hard Navigation return expected values:{' '}
-      <a style={{ backgroundColor: 'beige' }} href={'/page2'}>
-        Go page2
+      <a style={{ backgroundColor: 'beige' }} href={'/'}>
+        Go page1
       </a>
     </main>
   );
